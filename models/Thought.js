@@ -9,11 +9,14 @@ const ReactionSchema = new Schema(
         new Types.ObjectId();
       },
     },
-    reactionBody: {
+    reactionText: {
       type: String,
+      required: 'Must enter text to post a reaction!',
+      maxLength: [280, 'reaction cannot be more than 280 characters in length'],
     },
     username: {
       type: String,
+      required: 'Username is required!',
     },
     createdAt: {
       type: Date,
@@ -25,6 +28,7 @@ const ReactionSchema = new Schema(
     toJSON: {
       getters: true,
     },
+    id: false,
   }
 );
 
@@ -32,9 +36,9 @@ const ThoughtSchema = new Schema(
   {
     thoughtText: {
       type: String,
-      required: true,
-      minlength: [1, 'thought must be at least 1 character in length!'],
-      maxlength: [280, 'thought cannot be more than 280 characters in length'],
+      required: 'Must enter text to post a thought!',
+      trim: true,
+      maxLength: [280, 'thought cannot be more than 280 characters in length'],
     },
     createdAt: {
       type: Date,
@@ -43,7 +47,7 @@ const ThoughtSchema = new Schema(
     },
     username: {
       type: String,
-      required: true,
+      required: 'Username is required!',
     },
     reactions: [ReactionSchema],
   },
