@@ -37,11 +37,7 @@
   The application is covered under the following license:
 
   
-<<<<<<< Updated upstream
-  Info on License: [MIT](https://choosealicense.com/licenses/MIT)
-=======
   Info on License: [MIT](https://choosealicense.com/licenses/mit)
->>>>>>> Stashed changes
     
   
 
@@ -59,4 +55,4 @@
   <a class="questions"></a>
   ## Questions
 
-  If you have any questions about the repo, open an issue or contact me directly at [adamjfield@gmail.com](mailto:adamjfield@gmail.com) Source Han Sans). You can find more of my work at [adamjfield](https://github.com/undefined).
+  If you have any questions about the repo, open an issue or contact me directly at [adamjfield@gmail.com](mailto:adamjfield@gmail.com). You can find more of my work at [adamjfield](https://github.com/undefined).
