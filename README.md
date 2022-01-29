@@ -37,7 +37,11 @@
   The application is covered under the following license:
 
   
+<<<<<<< Updated upstream
   Info on License: [MIT](https://choosealicense.com/licenses/MIT)
+=======
+  Info on License: [MIT](https://choosealicense.com/licenses/mit)
+>>>>>>> Stashed changes
     
   
 
